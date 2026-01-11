@@ -3,31 +3,97 @@
     <head>
         <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../style.css">
         <title>Gallery</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                color: #0d1b2a;
+                text-decoration: none;
+            }
+        </style>
     </head>
 
-    <body>
-        <button><a href="../index.html">< назад</a></button>
-        <br>
-        <br>
-        <br>
+    <body style="background-color: #ADB5BD33;">
+        <div class="main-container" style="margin-bottom: 50px;">
+            <a href="../index.html" class="secondary__btn" 
+               style="
+               display: block; 
+               margin: 50px 0;"
+               >
+               назад
+            </a>
 
-        <div class="gallery">
-            <span>
-            <img src="../assets/photo/lesya2.jpeg" title="photo1">
-            </span>
-            <span>
-                <img src="../assets/photo/lesya3.jpeg" title="photo2">
-            </span>
-            <span>
-                <img src="..//assets/photo/lesya4.jpeg" title="photo3">
-            </span>
-            <span>
-                <img src="../assets/photo/lesya5.jpg" title="photo4">
-            </span>
-            <span>
-                <img src="../assets/photo/lesya6.jpg" title="photo5">
-            </span>
+            <div class="gallery">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/photo/lesya2.jpeg" title="photo1">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Лариса Косач</h3>
+                        <p>1887</p>
+                        <p>
+                            Цей знімок демонструє Лесю у традиційному українському жіночому одязі, 
+                            який відповідає стилю кінця XIX – початку XX ст.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/photo/lesya3.jpeg" title="photo2">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Лариса і Михайло Косачі</h3>
+                        <p>1888</p>
+                        <p>Портрет зроблений в Одесі</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="..//assets/photo/lesya4.jpeg" title="photo3">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>портрет Лесі Українки</h3>
+                        <p>1889</p>
+                        <p>реставрована/розфарбована копія того, що збереглась у фотографічних архівах</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/photo/lesya5.jpg" title="photo4">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Лариса Косач</h3>
+                        <p>1890</p>
+                        <p>серйозна за виразом, у стилі гардеробу того часу</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <img src="../assets/photo/lesya1.jpg" title="photo5">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Лариса Петрівна Косач</h3>
+                        <p>1888</p>
+                        <p>Портрет чорно-білий/сепійований, відреставрований у цифровому вигляді</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

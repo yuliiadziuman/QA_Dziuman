@@ -3,37 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
         <title>Contact</title>
     </head>
 
     <body>
-        <button><a href="../index.html">< назад</a></button>
-        <h1>Для отримання електронної версії творів контактуйте нас</h1>
+        <div class="main-container" style="margin-bottom: 50px;">
+            <a href="../index.html" class="secondary__btn" 
+               style="
+               display: block; 
+               margin: 50px 0;"
+               >
+               назад
+            </a>
+            <h1 style="text-align: center;">Для отримання електронної версії творів контактуйте нас</h1>
 
-        <div class="contacts">
-            <span>тел:<a href="tel:+380967935270">0967935270</a></span>
-            <span>email:<a href="mailto:ulija392@ukr.net">ulija392@ukr.net</a></span>
+            <form
+                action="mailto:ulija392@ukr.net"
+                method="get"
+                enctype="text/plain"
+
+                class="contact-form"
+            >
+                <h2 style="font-weight: 600;">Напишіть нам</h2>
+
+                <label for="name">Ваше імʼя:</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Яке ваше імʼя?">
+                <br>
+
+                <label for="message">Ваше повідомлення:</label>
+                <br>
+                <textarea type="text" name="message" id="message" placeholder="Яке ваше повідомлення?"></textarea>
+                <br>
+
+                <button type="submit" class="primary__btn" style="width: 378px;">Відправити повідомлення</button>
+            </form>
+
+            <div class="contacts" 
+                 style="display: flex; 
+                        gap: 15px; 
+                        width: 100%; 
+                        justify-content: center; 
+                        color: #0d1b2a99;"
+            >
+                <span>тел:<a href="tel:+380967935270" style="color: #0d1b2a99;">0967935270</a></span>
+                <span>email:<a href="mailto:ulija392@ukr.net" style="color: #0d1b2a99;">ulija392@ukr.net</a></span>
+            </div>
         </div>
-
-        <form
-            action="mailto:ulija392@ukr.net"
-            method="get"
-            enctype="text/plain"
-        >
-            <h2>Напишіть нам</h2>
-
-            <label for="name">Ваше імʼя:</label>
-            <br>
-            <input type="text" name="name" id="name">
-            <br>
-
-            <label for="message">Ваше повідомлення:</label>
-            <br>
-            <textarea type="text" name="message" id="message"></textarea>
-            <br>
-
-            <button type="submit">Відправити повідомлення</button>
-        </form>
-
     </body>
 </html>

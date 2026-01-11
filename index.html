@@ -4,163 +4,280 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yuliia Dziuman</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .main-info > .main-container {
+                display: flex;
+                gap: 80px;
+            }
+            .photo-container {
+                position: relative;         
+
+                max-width: 600px;
+                height: calc(100vh - 150px);            
+
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                border-radius: 20px;
+            }
+            .photo-container > img {
+                width: 100%;
+                height: 100%;           
+
+                object-fit: cover;          
+
+                border-radius: 20px;
+            }
+            .photo-container .bubble {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;            
+
+                position: absolute;         
+
+                background-color: white;
+                border: none;
+                border-radius: 8px;         
+
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;           
+
+                padding: 5px 15px;
+            }
+            .photo-container .poems {
+                top: -10px;
+                right: -10px;
+            }
+            .photo-container .dramatic {
+                bottom: -10px;
+                left: -10px;
+            }
+            .container-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                width: 50%;
+            }
+        </style>
     </head>
 
     <body>
-        <section class="main-info">
-            <h1>Леся Українка</h1>
-            <div class="photo-container">
-                <img src="./assets/photo/Lesya1.jpg">
-            </div>
-            <p>
-                Леся Українка, справжнє ім’я Лариса Петрівна Косач, народилася 25 лютого 1871 року в місті 
-                Новоград-Волинський (тепер Житомирська область). Вона була однією з найвидатніших українських 
-                письменниць, поетес та драматургів, а також активною громадською діячкою. Леся була вихованкою 
-                інтелігентної родини: її мати, Олена Пчілка, була відомою письменницею та громадською діячкою, 
-                а батько — Платон Косач — працював суддею.
-            </p>
-        </section>
-
-        <section class="childhood">
-            <h2>Дитинство</h2>
-            <p>
-                З дитинства Леся відрізнялася неабиякими розумовими здібностями. Вона швидко освоїла кілька мов, 
-                зокрема польську, французьку, німецьку та латину. Через тяжку хворобу (туберкульоз кісток), з якою 
-                вона боролася протягом всього життя, Леся часто змушена була жити в санаторіях і кліматичних курортах. 
-                Однак це не завадило їй займатися інтенсивною науковою та літературною діяльністю.
-            </p>
-
-            <p>
-                У віці 9 років вона вже почала писати вірші, а в 13 років вперше опублікувала свої твори. 
-                Її поезія вирізнялася не лише художньою майстерністю, а й глибоким патріотизмом, роздумами про 
-                гідність, боротьбу за свободу та рівність. Леся Українка була вірною ідеї незалежності України, 
-                і її творчість часто містила заклики до боротьби за національні права та соціальну справедливість.
-            </p>
-        </section>
-
-        <section class="early-works">
-            <h2>Ранні роботи</h2>
-            <p>
-                У віці 9 років вона вже почала писати вірші, а в 13 років вперше опублікувала свої твори. 
-                Її поезія вирізнялася не лише художньою майстерністю, а й глибоким патріотизмом, роздумами 
-                про гідність, боротьбу за свободу та рівність. Леся Українка була вірною ідеї незалежності України, 
-                і її творчість часто містила заклики до боротьби за національні права та соціальну справедливість.
-            </p>
-        </section>
-
-        <section class="famous-work">
-            <h2>Найвідоміший твір</h2>
-            <p>
-                Крім поезії, Леся написала численні драматичні твори. Її найвідомішою п’єсою є «Лісова пісня», 
-                в якій вона поєднала елементи української міфології з глибокими філософськими роздумами про природу 
-                людини та її зв’язок з природою. Вона також активно займалася перекладами, зокрема, перекладала 
-                твори Шекспіра, Гете та інших європейських класиків, адаптуючи їх до українського контексту.
-            </p>
-        </section>
-
-        <section class="influence">
-            <h2>Вплив на українську культуру</h2>
-            <p>
-                Леся Українка була важливою фігурою української культурної та громадської діяльності. 
-                Вона брала активну участь у літературних і культурних колах, організовувала та підтримувала різні 
-                національні та культурні ініціативи. Також Леся Українка мала велику підтримку та визнання 
-                серед українських емігрантів у різних країнах.
-            </p>
-            <p>
-                Попри своє тяжке фізичне здоров’я, вона залишалася невтомною у своїй праці. Письменниця, поетеса 
-                та драматург — її спадок не тільки в літературі, а й у свідомості українців як символ боротьби за 
-                свободу та гідність.
-            </p>
-        </section>
-
-        <section class="last-years">
-            <h2>Останні роки</h2>
-            <p>
-                Леся Українка померла 1 серпня 1913 року в місті Сурамі, Грузія, від туберкульозу. 
-                Вона залишила величезну культурну спадщину, яка досі надихає українців на боротьбу за свою гідність 
-                і свободу.
-            </p>
-        </section>
-
-        <section class="heritage">
-            <h2>Спадщина</h2>
-            <em>Контактуйте нас для отримання творів</em>
-            <button><a href="./pages/contact.html"><strong>Контактувати ></strong></a></button>
-
-            <div class="container-heritage">
-                <p><strong><em>Драматичні твори</em></strong></p>
-                <ul>
-                    <li>
-                        <a href="https://www.google.com/search?q=%D0%9B%D1%96%D1%81%D0%BE%D0%B2%D0%B0+%D0%BF%D1%96%D1%81%D0%BD%D1%8F&rlz=1C5CHFA_enCZ1184CZ1184&oq=%D1%82%D0%B2%D0%BE&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgcIAhAuGIAEMgcIAxAuGIAEMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgYIBxBFGDzSAQgxMzI0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfCEpEZKrfgEmL41VpG5Y1wr7-V3XyxTBz29z8yNsmkkH_Utf9ufx4-Y3x_0yut-obnzzE8DQyiSuSd7BI_YWmNjnSlcJNmLFvCf7UInEaba6IKvllo2jAiQNJZKq6qoS4k7cPy1UvIZnFvHKGbCTng4coLzROaku92Wh_n5SNCwi44&csui=3&ved=2ahUKEwjCoJrG9PKRAxVWIBAIHaSnL4IQgK4QegQIBhAB">
-                            <em>«Лісова пісня»</em>
-                        </a>
-                        : Мавка, Лукаш, лісові духи (символ боротьби природи і цивілізації).
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/search?q=%D0%9E%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%B0&rlz=1C5CHFA_enCZ1184CZ1184&oq=%D1%82%D0%B2%D0%BE&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgcIAhAuGIAEMgcIAxAuGIAEMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgYIBxBFGDzSAQgxMzI0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfCEpEZKrfgEmL41VpG5Y1wr7-V3XyxTBz29z8yNsmkkH_Utf9ufx4-Y3x_0yut-obnzzE8DQyiSuSd7BI_YWmNjnSlcJNmLFvCf7UInEaba6IKvllo2jAiQNJZKq6qoS4k7cPy1UvIZnFvHKGbCTng4coLzROaku92Wh_n5SNCwi44&csui=3&ved=2ahUKEwjCoJrG9PKRAxVWIBAIHaSnL4IQgK4QegQIBhAI">
-                            <em>«Одержима»</em>
-                        </a>
-                        : Історія святої Орисі.
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/search?q=%D0%91%D0%BE%D1%8F%D1%80%D0%B8%D0%BD%D1%8F&rlz=1C5CHFA_enCZ1184CZ1184&oq=%D1%82%D0%B2%D0%BE&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgcIAhAuGIAEMgcIAxAuGIAEMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgYIBxBFGDzSAQgxMzI0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfCEpEZKrfgEmL41VpG5Y1wr7-V3XyxTBz29z8yNsmkkH_Utf9ufx4-Y3x_0yut-obnzzE8DQyiSuSd7BI_YWmNjnSlcJNmLFvCf7UInEaba6IKvllo2jAiQNJZKq6qoS4k7cPy1UvIZnFvHKGbCTng4coLzROaku92Wh_n5SNCwi44&csui=3&ved=2ahUKEwjCoJrG9PKRAxVWIBAIHaSnL4IQgK4QegQIBhAD">
-                            <em>«Бояриня»</em>
-                        </a>
-                        : Драматична поема про долю жінки в патріархальному суспільстві.
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/search?q=%D0%9A%D0%B0%D1%81%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0+%D0%BB%D0%B5%D1%81%D1%8F+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B0&rlz=1C5CHFA_enCZ1184CZ1184&oq=%D0%9A%D0%B0%D1%81%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0+%D0%BB%D0%B5%D1%81%D1%8F+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B0&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABjvBTIHCAkQABjvBdIBCDk3MDdqMGo3qAIIsAIB8QWqDifDvGVo4g&sourceid=chrome&ie=UTF-8">
-                            <em>«Кассандра»</em>
-                        </a>
-                        : Драматична поема про троянську царівну.
-                    </li>
-                    <li>
-                        <a href="https://www.google.com/search?q=%D0%9A%D0%B0%D0%BC%D1%96%D0%BD%D0%BD%D0%B8%D0%B9+%D0%B3%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B0%D1%80&rlz=1C5CHFA_enCZ1184CZ1184&oq=%D1%82%D0%B2%D0%BE&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgcIAhAuGIAEMgcIAxAuGIAEMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgYIBxBFGDzSAQgxMzI0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfCEpEZKrfgEmL41VpG5Y1wr7-V3XyxTBz29z8yNsmkkH_Utf9ufx4-Y3x_0yut-obnzzE8DQyiSuSd7BI_YWmNjnSlcJNmLFvCf7UInEaba6IKvllo2jAiQNJZKq6qoS4k7cPy1UvIZnFvHKGbCTng4coLzROaku92Wh_n5SNCwi44&csui=3&ved=2ahUKEwjCoJrG9PKRAxVWIBAIHaSnL4IQgK4QegQIBhAG">
-                            <em>«Камінний господар»</em>
-                        </a>
-                        : Переосмислення історії Дон Кіхота.
-                    </li>
+        <header>
+            <nav class="nav">
+                <span class="logo"><a href="./index.html">Леся Українка</a></span>
+                <ul class="nav-list">
+                    <li><a href="#childhood">Дитинство</a></li>
+                    <li><a href="#early__works">Роботи</a></li>
+                    <li><a href="#famous__work">Найвідоміше</a></li>
+                    <li><a href="#influence">Вплив</a></li>
+                    <li><a href="#last__years">Останні роки</a></li>
+                    <li><a href="#heritage">Спадщина</a></li>
                 </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="main-info">
+                <div class="main-container">
+                    <div class="container-info">
+                        <h1>Леся Українка</h1>
+                        <p>
+                            Леся Українка, справжнє ім’я Лариса Петрівна Косач, народилася 25 лютого 1871 року в місті 
+                            Новоград-Волинський (тепер Житомирська область). Вона була однією з найвидатніших українських 
+                            письменниць, поетес та драматургів, а також активною громадською діячкою. Леся була вихованкою 
+                            інтелігентної родини: її мати, Олена Пчілка, була відомою письменницею та громадською діячкою, 
+                            а батько — Платон Косач — працював суддею.
+                        </p>
+                        <div class="container-btns"
+                             style="display: flex; gap: 20px;"
+                        >
+                            <a href="./pages/contact.html" class="primary__btn">Отримати твори</a>
+                        
+                            <a href="./pages/gallery.html" class="secondary__btn">Перейти до галереї</a>
+                        </div>               
+                    </div>
+                    <div class="photo-container">
+                        <div class="poems bubble">
+                            <h3>270</h3>
+                            <p>віршів</p>
+                        </div>
+                        <img src="./assets/photo/Lesya6.jpg">
+                        <div class="dramatic bubble">
+                            <h3>Близько 20</h3>
+                            <p>драматичних творів</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="childhood" id="childhood">
+                <div class="main-container">
+                    <h2>Дитинство</h2>
+                    <p>
+                        З дитинства Леся відрізнялася неабиякими розумовими здібностями. Вона швидко освоїла кілька мов, 
+                        зокрема польську, французьку, німецьку та латину. Через тяжку хворобу (туберкульоз кісток), з якою 
+                        вона боролася протягом всього життя, Леся часто змушена була жити в санаторіях і кліматичних курортах. 
+                        Однак це не завадило їй займатися інтенсивною науковою та літературною діяльністю.
+                    </p>
+
+                    <p>
+                        У віці 9 років вона вже почала писати вірші, а в 13 років вперше опублікувала свої твори. 
+                        Її поезія вирізнялася не лише художньою майстерністю, а й глибоким патріотизмом, роздумами про 
+                        гідність, боротьбу за свободу та рівність. Леся Українка була вірною ідеї незалежності України, 
+                        і її творчість часто містила заклики до боротьби за національні права та соціальну справедливість.
+                    </p>
+                </div>
+            </section>
+            <section class="early__works" id="early__works">
+                <div class="main-container">
+                    <h2>Ранні роботи</h2>
+                    <p>
+                        У віці 9 років вона вже почала писати вірші, а в 13 років вперше опублікувала свої твори. 
+                        Її поезія вирізнялася не лише художньою майстерністю, а й глибоким патріотизмом, роздумами 
+                        про гідність, боротьбу за свободу та рівність. Леся Українка була вірною ідеї незалежності України, 
+                        і її творчість часто містила заклики до боротьби за національні права та соціальну справедливість.
+                    </p>
+                </div>
+            </section>
+            <section class="famous__work" id="famous__work">
+                <div class="main-container">
+                    <h2>Найвідоміший твір</h2>
+                    <p>
+                        Крім поезії, Леся написала численні драматичні твори. Її найвідомішою п’єсою є «Лісова пісня», 
+                        в якій вона поєднала елементи української міфології з глибокими філософськими роздумами про природу 
+                        людини та її зв’язок з природою. Вона також активно займалася перекладами, зокрема, перекладала 
+                        твори Шекспіра, Гете та інших європейських класиків, адаптуючи їх до українського контексту.
+                    </p>
+                </div>
+            </section>
+            <section class="influence" id="influence">
+                <div class="main-container">
+                    <h2>Вплив на українську культуру</h2>
+                    <p>
+                        Леся Українка була важливою фігурою української культурної та громадської діяльності. 
+                        Вона брала активну участь у літературних і культурних колах, організовувала та підтримувала різні 
+                        національні та культурні ініціативи. Також Леся Українка мала велику підтримку та визнання 
+                        серед українських емігрантів у різних країнах.
+                    </p>
+                    <p>
+                        Попри своє тяжке фізичне здоров’я, вона залишалася невтомною у своїй праці. Письменниця, поетеса 
+                        та драматург — її спадок не тільки в літературі, а й у свідомості українців як символ боротьби за 
+                        свободу та гідність.
+                    </p>
+                </div>
+            </section>
+            <section class="last__years" id="last__years">
+                <div class="main-container">
+                    <h2>Останні роки</h2>
+                    <p>
+                        Леся Українка померла 1 серпня 1913 року в місті Сурамі, Грузія, від туберкульозу. 
+                        Вона залишила величезну культурну спадщину, яка досі надихає українців на боротьбу за свою гідність 
+                        і свободу.
+                    </p>
+                </div>
+            </section>
+            <section class="heritage" id="heritage">
+                <div class="main-container">
+                    <h2>Спадщина</h2>
+
+                    <div class="container-heritage">
+                        <p><strong><em>Драматичні твори</em></strong></p>
+                        <ul>
+                            <li>
+                                <a href="https://www.ukrlib.com.ua/books/printit.php?tid=508">
+                                    <em>«Лісова пісня»</em>
+                                </a>
+                                : Мавка, Лукаш, лісові духи (символ боротьби природи і цивілізації).
+                            </li>
+                            <li>
+                                <a href="https://www.ukrlib.com.ua/books/printit.php?tid=514">
+                                    <em>«Одержима»</em>
+                                </a>
+                                : Історія святої Орисі.
+                            </li>
+                            <li>
+                                <a href="https://www.ukrlib.com.ua/books/printit.php?tid=481">
+                                    <em>«Бояриня»</em>
+                                </a>
+                                : Драматична поема про долю жінки в патріархальному суспільстві.
+                            </li>
+                            <li>
+                                <a href="https://www.ukrlib.com.ua/books/printit.php?tid=10382">
+                                    <em>«Кассандра»</em>
+                                </a>
+                                : Драматична поема про троянську царівну.
+                            </li>
+                            <li>
+                                <a href="https://www.ukrlib.com.ua/books/printit.php?tid=501">
+                                    <em>«Камінний господар»</em>
+                                </a>
+                                : Переосмислення історії Дон Кіхота.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container-heritage">
+                        <p><strong><em>Поезії</em></strong></p>
+                        <ol>
+                            <li>«Contra spem spero!»: Гімн незламності духу.</li>
+                            <li>«Стояла я і слухала весну...»: Про боротьбу життя і смерті, весну і осінь.</li>
+                            <li>«Твої листи завжди пахнуть зовʼялими трояндами...»</a>: Про кохання і вірність (присвячено Сергію Мержинському).</li>
+                            <li>«Співець»: Про призначення поета.</li>
+                            <li>«Надія», «Конвалія», «Сафо», «Сосна».</li>
+                        </ol>
+                    </div>
+
+                    <div class="container-heritage">
+                        <p><strong><em>Проза</em></strong></p>
+                        <table>
+                            <tr>
+                                <td>«Біда навчить»: Казка про дівчину-ледарку.</td>
+                                <td>«Жаль»: Повість про сироту.</td>
+                            </tr>
+                            <tr>
+                                <td>«Така її доля»: Оповідання про селянське життя.</td>
+                                <td>«Екбаль Ганем»: Незакінчена повість.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="container-heritage">
+                        <p><strong><em>Інші твори</em></strong></p>
+                        <ol>
+                            <li>«Давня казка»: Поема-казка.</li>
+                            <li>Збірки поезії: «Думи і мрії», «Varia».</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="main-container">
+                <nav class="footer-nav">
+                    <h3>Швидкі посилання</h3>
+                    <ul class="nav-list">
+                        <li><a href="#childhood">Дитинство</a></li>
+                        <li><a href="#early__works">Роботи</a></li>
+                        <li><a href="#famous__work">Найвідоміше</a></li>
+                        <li><a href="#influence">Вплив</a></li>
+                        <li><a href="#last__years">Останні роки</a></li>
+                        <li><a href="#heritage">Спадщина</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contacts">
+                    <h3>Контактуйте нас</h3>
+
+                    <div class="container-contacts">
+                        <span>&#x1F4DE; <a href="tel:+380967935270">0967935270</a></span>
+                        <span>&#x1F4E7; <a href="mailto:ulija392@ukr.net">ulija392@ukr.net</a></span>
+                    </div>
+                </div>
             </div>
 
-            <div class="container-heritage">
-                <p><strong><em>Поезії</em></strong></p>
-                <ol>
-                    <li>«Contra spem spero!»: Гімн незламності духу.</li>
-                    <li>«Стояла я і слухала весну...»: Про боротьбу життя і смерті, весну і осінь.</li>
-                    <li>«Твої листи завжди пахнуть зовʼялими трояндами...»</a>: Про кохання і вірність (присвячено Сергію Мержинському).</li>
-                    <li>«Співець»: Про призначення поета.</li>
-                    <li>«Надія», «Конвалія», «Сафо», «Сосна».</li>
-                </ol>
-            </div>
-
-            <div class="container-heritage">
-                <p><strong><em>Проза</em></strong></p>
-                <table>
-                    <tr>
-                        <td>«Біда навчить»: Казка про дівчину-ледарку.</td>
-                        <td>«Жаль»: Повість про сироту.</td>
-                    </tr>
-                    <tr>
-                        <td>«Така її доля»: Оповідання про селянське життя.</td>
-                        <td>«Екбаль Ганем»: Незакінчена повість.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="container-heritage">
-                <p><strong><em>Інші твори</em></strong></p>
-                <ol>
-                    <li>«Давня казка»: Поема-казка.</li>
-                    <li>Збірки поезії: «Думи і мрії», «Varia».</li>
-                </ol>
-            </div>
-        </section>
-        
-        <div>
-            <span><stron><em>Фото галерея</em></stron></span>
-
-            <button><a href="./pages/gallery.html"><strong>Перейти до галереї ></strong></a></button>
-        </div>
+            <p class="privacy">&copy; 2026 Yuliia Dziuman. All rights reserved.</p>
+        </footer>
     </body>
 </html>
